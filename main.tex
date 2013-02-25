@@ -40,10 +40,9 @@
 \cleardoublepage
 
 %% Only for the master's thesis; if the main text is in English and you can write Norwegian, there must be an abstract in Norwegian as well.A
-% \selectlanguage{norsk}
-% \include{abstract_norwegian}
-% \cleardoublepage
-% hai
+\selectlanguage{norsk}
+\include{abstract_norwegian}
+\cleardoublepage
 \selectlanguage{english}% Change to 'norsk' if you are writing in Norwegian
 
 \include{preface}
@@ -79,8 +78,15 @@
 \pagenumbering{arabic}
 \pagestyle{ruled}
 \include{example_chapter}
-\cite{hei}
+\cite{hei} % bare tester bruk av en referanse her
 %% include here the other chapters
+\include{introduction}
+\include{use_case_study}
+\include{requirements}
+\include{sota_related}
+\include{design}
+\include{proof_of_concept}
+\include{conclusion}
 
 \renewcommand*{\bibname}{References}
 \bibliographystyle{alpha}
